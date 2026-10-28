@@ -1,0 +1,98 @@
+/*
+ * PhishLens design tokens.
+ * Palette: cool paper and the blue-grey of a security envelope's tinted
+ * interior. Severity colours are always paired with a text label and a
+ * distinct icon shape, never used alone.
+ */
+:root {
+  color-scheme: light;
+
+  --font-sans:
+    'Atkinson Hyperlegible Next', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'Atkinson Hyperlegible Mono', ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  --paper: #f4f6f7;
+  --surface: #ffffff;
+  --surface-sunk: #eaeef1;
+  --tint: #dce3e8;
+  --tint-line: #c9d3db;
+  --rule: #d3dbe1;
+  --rule-strong: #aebac4;
+  /* Borders of interactive controls: at least 3:1 against the page (WCAG 1.4.11). */
+  --control-border: #7d8b97;
+  --ink: #16212c;
+  --ink-muted: #46535f;
+  --ink-faint: #5f6c78;
+  --blue: #2d4e80;
+  --blue-strong: #1f3a63;
+  --blue-wash: #e2e9f3;
+  --on-blue: #ffffff;
+  --focus-ring: #1b5fd1;
+
+  --sev-high: #b3261e;
+  --sev-high-wash: #fbeae8;
+  --sev-medium: #8a4a00;
+  --sev-medium-wash: #fcf0dc;
+  --sev-low: #55621a;
+  --sev-low-wash: #eff2dc;
+  --sev-info: #46535f;
+  --sev-info-wash: #e8ecef;
+
+  /* Type scale: 1.25 ratio from a 16px base. */
+  --text-xs: 0.8125rem;
+  --text-s: 0.875rem;
+  --text-m: 1rem;
+  --text-l: 1.25rem;
+  --text-xl: 1.5625rem;
+  --text-2xl: 1.953rem;
+  --text-3xl: 2.441rem;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+
+  --radius-s: 3px;
+  --radius-m: 6px;
+  --radius-l: 10px;
+
+  --measure: 68ch;
+  --page-width: 1180px;
+  --shadow-label: 0 1px 0 rgba(22, 33, 44, 0.06), 0 6px 18px -8px rgba(22, 33, 44, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --paper: #0f1822;
+    --surface: #16212d;
+    --surface-sunk: #1c2835;
+    --tint: #1d2a38;
+    --tint-line: #263546;
+    --rule: #2a3a4b;
+    --rule-strong: #3d5064;
+    --control-border: #6b8199;
+    --ink: #e5ecf2;
+    --ink-muted: #b3c0cc;
+    --ink-faint: #93a2b0;
+    --blue: #8db1e8;
+    --blue-strong: #b4cdf2;
+    --blue-wash: #1d3150;
+    --on-blue: #0f1822;
+    --focus-ring: #8fb8ff;
+
+    --sev-high: #ff8f86;
+    --sev-high-wash: #3a1d1d;
+    --sev-medium: #f4b85a;
+    --sev-medium-wash: #352712;
+    --sev-low: #c8d37a;
+    --sev-low-wash: #2a2f17;
+    --sev-info: #b3c0cc;
+    --sev-info-wash: #223040;
+    --shadow-label: 0 1px 0 rgba(0, 0, 0, 0.3), 0 10px 24px -10px rgba(0, 0, 0, 0.7);
+  }
+}

@@ -1,0 +1,48 @@
+Received: from mx.recipient.example (mx.recipient.example [192.0.2.10])
+	by mailstore.recipient.example with LMTP; Wed, 14 Oct 2026 16:30:12 +0000
+Authentication-Results: mx.recipient.example;
+	spf=pass smtp.mailfrom=bounces.example.net;
+	dkim=pass header.d=example.com header.s=news;
+	dmarc=pass header.from=example.com
+Received: from out-12.mailer.example.net (out-12.mailer.example.net [198.51.100.12])
+	by mx.recipient.example with ESMTPS; Wed, 14 Oct 2026 16:30:10 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=example.com; s=news;
+	h=from:to:subject:date:message-id:list-unsubscribe;
+	bh=bmV3c2xldHRlci1ib2R5LWhhc2g=; b=bmV3c2xldHRlci1zaWduYXR1cmUtbm90LXJlYWw=
+Return-Path: <bounce-8842@bounces.example.net>
+From: Example Store <news@mail.example.com>
+To: reader@recipient.example
+Subject: Your October product update
+Date: Wed, 14 Oct 2026 16:30:00 +0000
+Message-ID: <oct-2026-update.8842@mail.example.com>
+List-Unsubscribe: <https://www.example.com/unsubscribe?id=8842>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="alt-boundary-03"
+
+--alt-boundary-03
+Content-Type: text/plain; charset=utf-8
+
+PHISHLENS SYNTHETIC SAMPLE - NOT A REAL MESSAGE
+
+Hi there,
+
+Here is what is new this month at Example Store. Read the full update at
+https://www.example.com/blog/october-update
+
+Unsubscribe: https://www.example.com/unsubscribe?id=8842
+
+--alt-boundary-03
+Content-Type: text/html; charset=utf-8
+
+<!doctype html>
+<html><body>
+<p style="font-size:11px;color:#888">PHISHLENS SYNTHETIC SAMPLE - NOT A REAL MESSAGE</p>
+<img src="https://cdn.example.com/newsletter/header.png" alt="Example Store" width="600">
+<p>Hi there,</p>
+<p>Here is what is new this month at Example Store.</p>
+<p><a href="https://www.example.com/blog/october-update">Read the full update</a></p>
+<p><a href="https://www.example.com/products">www.example.com/products</a></p>
+<p style="font-size:11px"><a href="https://www.example.com/unsubscribe?id=8842">Unsubscribe</a></p>
+</body></html>
+
+--alt-boundary-03--

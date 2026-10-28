@@ -1,0 +1,58 @@
+Received: from mx.recipient.example (mx.recipient.example [192.0.2.10])
+	by mailstore.recipient.example with LMTP; Tue, 13 Oct 2026 14:02:41 +0000
+Authentication-Results: mx.recipient.example;
+	spf=pass smtp.mailfrom=vendor-billing.example;
+	dkim=pass header.d=vendor-billing.example header.s=mail;
+	dmarc=pass header.from=vendor-billing.example
+Received: from smtp.vendor-billing.example (smtp.vendor-billing.example [198.51.100.77])
+	by mx.recipient.example with ESMTPS; Tue, 13 Oct 2026 14:02:39 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=vendor-billing.example; s=mail;
+	h=from:to:subject:date:message-id; l=120;
+	bh=c2FtcGxlLWJvZHktaGFzaA==; b=c2FtcGxlLXNpZ25hdHVyZS1ub3QtcmVhbA==
+Return-Path: <ap@vendor-billing.example>
+From: Accounts Payable <ap@vendor-billing.example>
+Reply-To: <phishlens-sample-not-real@gmail.com>
+To: finance@recipient.example
+Subject: Overdue invoice 2026-104 - payment details updated
+Date: Tue, 13 Oct 2026 14:02:30 +0000
+Message-ID: <invoice-2026-104@vendor-billing.example>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="mixed-boundary-02"
+
+--mixed-boundary-02
+Content-Type: text/plain; charset=utf-8
+
+PHISHLENS SYNTHETIC SAMPLE - NOT A REAL MESSAGE
+
+Hello,
+
+Please find the overdue invoice attached. Our banking details have changed,
+so update your payment information before the final notice is issued.
+The archive password is 4471.
+
+Accounts Payable
+
+--mixed-boundary-02
+Content-Type: application/octet-stream; name="Invoice_2026-104.pdf.exe"
+Content-Disposition: attachment; filename="Invoice_2026-104.pdf.exe"
+Content-Transfer-Encoding: base64
+
+TVqQAAMAAABQSElTSExFTlMgU1lOVEhFVElDIFNBTVBMRSAtIE5PVCBBTiBFWEVDVVRBQkxFAAAA
+AAAAAAAAAAAAAAAAAA==
+
+--mixed-boundary-02
+Content-Type: text/html; name*=utf-8''Remittance%E2%80%AEfdp.html
+Content-Disposition: attachment; filename*=utf-8''Remittance%E2%80%AEfdp.html
+Content-Transfer-Encoding: base64
+
+PCFkb2N0eXBlIGh0bWw+PGh0bWw+PGJvZHk+PHA+UEhJU0hMRU5TIFNZTlRIRVRJQyBTQU1QTEUg
+LSBOT1QgQSBSRUFMIE1FU1NBR0U8L3A+PC9ib2R5PjwvaHRtbD4=
+
+--mixed-boundary-02
+Content-Type: application/zip; name="statement.zip"
+Content-Disposition: attachment; filename="statement.zip"
+Content-Transfer-Encoding: base64
+
+UEsDBBQAAQAAAAAAAAAAAAAAAAAAAAAAAAALAAAAaW52b2ljZS5wZGZQSElTSExFTlMgU0FNUExF
+
+--mixed-boundary-02--
